@@ -91,25 +91,6 @@ signupForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Google Login
-document.getElementById("googleLoginBtn").addEventListener("click", async () => {
-  const provider = new GoogleAuthProvider();
-
-  try {
-    const result = await signInWithPopup(auth, provider);
-    const user = result.user;
-
-    localStorage.setItem("hopefundUser", JSON.stringify({
-      name: user.displayName || "User",
-      email: user.email
-    }));
-
-    window.location.href = "./home.html";
-  } catch (error) {
-    console.error("Google Login Error:", error);
-  
-  }
-});
 
 // Auto Redirect if Already Logged In
 onAuthStateChanged(auth, (user) => {

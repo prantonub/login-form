@@ -44,7 +44,7 @@ signupTab.addEventListener('click', () => {
   loginTab.classList.remove('text-lime-600');
 });
 
-// Login
+/// Login
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value.trim();

@@ -1,23 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  updateProfile,
-  GoogleAuthProvider,
-  signInWithPopup,
-  onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
-// Firebase Config
-const firebaseConfig = {
-  apiKey: "AIzaSyBJRf4PnsudBwNV4xJYc6RJITo6W0vL1_s",
-  authDomain: "login-from-cd3e0.firebaseapp.com",
-  projectId: "login-from-cd3e0",
-  storageBucket: "login-from-cd3e0.appspot.com",
-  messagingSenderId: "733725777713",
-  appId: "1:733725777713:web:4a2f9d3344e00f6261da10"
-};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
